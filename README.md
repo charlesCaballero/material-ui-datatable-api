@@ -2,6 +2,12 @@
 
 This is just [material-ui table](https://mui.com/material-ui/react-table/#data-table) with some features of [material-ui datagrid](https://mui.com/x/react-data-grid/).
 
+# Installation
+
+```
+npm i material-ui-datatable-api
+```
+
 ## API
 
 <DataTable/>
