@@ -1,0 +1,56 @@
+{
+  "version": "1.3.14",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "material-ui-datatable-api",
+  "author": "Charles",
+  "module": "dist/material-ui-datatable-api.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/material-ui-datatable-api.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/material-ui-datatable-api.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.5",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0"
+  }
+}
