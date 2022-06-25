@@ -15,7 +15,7 @@ npm i material-ui-datatable-api
 These component only accepts the following props:
 | Name | Type | Description |
 | ------------- |:-----------------:|:-------------|
-| header | ` Array``<HeadCell> ` | _required_. Header of the table. |
+| header | `Array<HeadCell>` | _required_. Header of the table. |
 | rows | `any`[] | _required_. Its an array of object to displayed as rows in table |
 | rowsPerPage | `number` | _required_. The limit of rows to be displayed in a page |
 | page | `number` | _required_. Tells the table the current page(collection of rows per the specified limit) |
